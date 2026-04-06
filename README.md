@@ -60,7 +60,6 @@ useCaseDiagram
         (Oversee Departments) ..> (Database Sync) : <<include>>
     }
 ```
----
 
 ## 🛠️ Technical Stack
 * **Framework:** ASP.NET Core
