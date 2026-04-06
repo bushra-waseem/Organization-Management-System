@@ -21,8 +21,6 @@ Managing a growing organization requires a reliable way to track human resources
 # 2. Enter the project directory
 cd Organization-Management-System
 
-# 3. Open in the current VS Code window (Optional)
-code .
 ---
 ## 🏗️ System Architecture
 This diagram illustrates the multi-tier architecture of the application, showing how the UI interacts with the database.
