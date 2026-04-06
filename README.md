@@ -11,6 +11,18 @@ Managing a growing organization requires a reliable way to track human resources
 * **Advanced Search Engine:** Instantly locate staff using multi-filter search options (Name, ID, or Role).
 * **Role-Based Security:** Secure login system to ensure only authorized administrators can modify organizational data.
 * **Interactive Dashboard:** A clean, cinematic UI providing a bird's-eye view of the organization's status.
+
+---
+## 🛠️ Installation & Setup
+# 1. Clone the repository
+   ```bash
+   git clone [https://github.com/bushra-waseem/Organization-Management-System.git](https://github.com/bushra-waseem/Organization-Management-System.git)
+   ```
+# 2. Enter the project directory
+cd Organization-Management-System
+
+# 3. Open in the current VS Code window (Optional)
+code .
 ---
 ## 🏗️ System Architecture
 This diagram illustrates the multi-tier architecture of the application, showing how the UI interacts with the database.
@@ -49,18 +61,27 @@ mindmap
 ## 👥 Use Case Diagram
 This diagram represents the interaction between the Administrator (Actor) and the system's primary functions.
 ```mermaid
-useCaseDiagram
-    actor Admin
-    rectangle "Organization Management System" {
-        Admin --> (Authenticate Login)
-        Admin --> (Manage Employee Records)
-        Admin --> (Oversee Departments)
-        Admin --> (Query System Data)
-        (Manage Employee Records) ..> (Database Sync) : <<include>>
-        (Oversee Departments) ..> (Database Sync) : <<include>>
-    }
-```
+graph LR
+    subgraph "Organization Management System"
+        UC1((Authenticate Login))
+        UC2((Manage Employee Records))
+        UC3((Oversee Departments))
+        UC4((Query System Data))
+        UC5((Database Sync))
+    end
 
+    Admin((Admin)) --- UC1
+    Admin --- UC2
+    Admin --- UC3
+    Admin --- UC4
+
+    UC2 -.->|include| UC5
+    UC3 -.->|include| UC5
+    
+    style Admin fill:#f9f,stroke:#333,stroke-width:2px
+    style UC5 fill:#e1f5fe,stroke:#01579b
+```
+---
 ## 🛠️ Technical Stack
 * **Framework:** ASP.NET Core
 * **Database:** SQL Server (Dapper ORM)
