@@ -96,8 +96,8 @@ graph LR
 | <img src="Screenshots/01%20home.png" width="250"> | <img src="Screenshots/02%20hero%20section.png" width="250"> | <img src="Screenshots/03%20about%20.png" width="250"> |
 
 #### 2. Main Dashboard
-<p align="center">
-  <img src="Screenshots/04%20dashboard.png" width="600" alt="Dashboard Overview">
+<p align="left">
+  <img src="Screenshots/04%20dashboard.png" width="250" alt="Dashboard Overview">
 </p>
 
 #### 3. Organization Management
@@ -121,8 +121,8 @@ graph LR
 | <img src="Screenshots/17%20employee%20card.png" width="200"> | <img src="Screenshots/18%20create%20employee.png" width="200"> | <img src="Screenshots/19%20edit%20employee.png" width="200"> | <img src="Screenshots/20%20delete%20employee.png" width="200"> |
 
 #### 7. Contact Us
-<p align="center">
-  <img src="Screenshots/21%20contact%20.png" width="450" alt="Contact Page">
+<p align="left">
+  <img src="Screenshots/21%20contact%20.png" width="250" alt="Contact Page">
 </p>
 </details>
 
